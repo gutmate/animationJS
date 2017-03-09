@@ -20,7 +20,7 @@
         matchPath = matchPath || ['null']; //에러 방지
         var imgPath = matchPath[0]; //배열에서 값 가져오기
         var reExtn = /[0-9]+/gm; //모든 숫자 선택
-        var imgExtn = reversePath.relace(reExtn,''); //4자리숫자.확장자 값에서 확장자만 반환
+        var imgExtn = reversePath.replace(reExtn,''); //4자리숫자.확장자 값에서 확장자만 반환
         var startNum = 0;
         var arrImg = [];
         steps = steps || 0;
