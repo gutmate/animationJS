@@ -11,7 +11,7 @@
  * @delay {number} 애니메이션 시작 대기시간
  */
 ;(function($){
-    $.fn.animationImg = function(steps, duration, delay) {
+    $.fn.animationImg = function(steps, duration, repeat, delay) {
         var $this = $(this);
         var path = $this.attr('src');
         var rePath = /.+(?=[0-9]{4}.)/gm;
@@ -25,6 +25,7 @@
         var arrImg = [];
         steps = steps || 0;
         duration = duration || 100;
+        repeat = repeat || false;
         delay = delay || 0;
 
         for(i=startNum; i<steps+1; i++) {
@@ -47,7 +48,11 @@
                 function aniImg() {
                     startNum = startNum + 1;
                     if (startNum > steps) {
-                        clearInterval(anim);
+                      if (repeat === 'repeat') {
+                        startNum = 0; //반복
+                      } else {
+                        clearInterval(anim); //정지
+                      }
                     } else {
                         $this.attr('src',arrImg[startNum]);
                     }
