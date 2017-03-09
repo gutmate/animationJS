@@ -2,8 +2,6 @@
 
 jQuery image animation
 
-## plugin
-
 ```javascript
 /**
  * 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로하며
