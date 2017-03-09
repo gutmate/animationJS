@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+html {
+  -webkit-text-size-adjust: none;
+}
+body {
+  line-height: 1.4;
+  font-family: NanumGothic, Dotum, sans-serif;
+  letter-spacing: -1px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  color: #646464
+}
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, input, table, tr, th, td, button, textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1
+}
+ul, ol, li {
+  list-style: none
+}
+hr {
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden
+}
+fieldset {
+  border: none
+}
+a {
+  text-decoration: none;
+  color: #646464
+}
+a:hover, a:active, a:visited {
+  text-decoration: none;
+  /* color:#646464; */
+}
+a:focus, button:focus {
+  outline: none
+}
+img {
+  border: 0;
+  vertical-align: top
+}
+button, input, select, textarea {
+  vertical-align: middle;
+  font-family: inherit
+}
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  /* color:#646464; */
+  letter-spacing: -1px
+}
+input:not([type="file"]), select, textarea {
+  height: 25px;
+  border-width: 0 0 1px;
+  border-color: #d2d2d2;
+  box-sizing: border-box;
+  /*font-weight:100;*/
+  font-size: 15px;
+  line-height: 25px;
+}
+input:not([type="file"]) {
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+select {
+  border: 1px solid #ccc;
+  color: #828282;
+  box-sizing: border-box;
+  border-radius: 0;
+  vertical-align: middle
+}
+textarea {
+  resize: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bebebe;
+  border-radius: 0
+}
+em, address {
+  font-style: normal
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  border-collapse: collapse
+}
+label {
+  vertical-align: middle;
+  cursor: pointer
+}
+strong {
+  font-weight: 600;
+  color: #1e1e1e
+}
+sup {
+  font-size: 10px
+}
+::-webkit-input-placeholder {
+  font-weight: 100;
+  font-size: 15px;
+  color: #828282
+}
+input:-moz-placeholder {
+  font-weight: 100;
+  font-size: 15px;
+  color: #828282
+}
