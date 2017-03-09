@@ -4,8 +4,6 @@ jQuery image animation
 
 ## 의존파일
 
-html
-
 ```html
 <script src="jquery-1.11.3.js"></script> <!-- jQuery 필수-->
 <script src="animationjs-1.0.js"></script>
