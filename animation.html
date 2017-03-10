@@ -10,23 +10,47 @@
   <script src="js/animationjs-1.0.js"></script>
   <style>
     .wrap {
-      width: 1000px;
-      margin: 0 auto;
+      width: 100%;
+      /* margin: 0 auto; */
     }
     .animation {
       padding-top: 50px;
+      text-align: center;
+    }
+    .button-wrap {
+      margin: 10px 0 10px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    button {
+      padding: 5px 15px;
+      border: 1px solid #444;
+      background-color: #efefef;
     }
   </style>
   <script>
     $(document).ready(function(){
-      $('.img_animation').animationImg(96,30,'repeat');
+      //$('.img_animation').animationImg(96,30,'repeat');
+      $('.start').on('click', function(){
+        console.log('RUN!');
+        $('.img_animation').animationImg(96,30,'repeat');
+      });
+      $('.stop').on('click', function(){
+        console.log('STOP!');
+        //clearInterval();
+      });
     });
   </script>
 </head>
 <body>
   <div class="wrap">
     <div class="animation">
-      animation 애니메이션
+      <h1>animation 애니메이션</h1>
+      <p class="button-wrap">
+        <button class="start">RUN!</button>
+        <button class="stop">STOP!</button>
+      </p>
       <p><img src="img/img_layer_0000.jpg" alt="gif" class="img_animation"></p>
     </div>
   </div>
