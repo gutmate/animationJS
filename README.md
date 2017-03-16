@@ -6,7 +6,7 @@ jQuery image animation
 
 ```html
 <script src="jquery-1.11.3.js"></script> <!-- jQuery 필수-->
-<script src="animationjs-1.0.js"></script>
+<script src="jquery.animationjs-1.0.js"></script>
 ```
 
 ## 실행
