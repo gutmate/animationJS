@@ -21,6 +21,10 @@ javascript
 
 ```javascript
 $(document).ready(function(){
-    $('.animation_img').animationImg(9,100,'repeat',3000);
+  $('.animation_img').animationImg({
+    steps: 43,
+    duration: 100,
+    repeat: false
+  });
 });
 ```
