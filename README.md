@@ -28,11 +28,8 @@ Call `.animationImg()` on `<img class="animation_img">`. Note that the call must
 ```javascript
 $(document).ready(function(){
   $('.animation_img').animationImg({
-    startNum: 0,
-    steps: 10,
-    duration: 30,
-    repeat: true,
-    delay: 0
+    steps: 45,
+    repeat: false
   });
 });
 ```
