@@ -18,7 +18,7 @@ The image files extension shall be png/gif/jpg.
 <!-- jQuery library -->
 <script src="jquery-1.11.3.js"></script>
 <!-- animationImg Javascript file -->
-<script src="jquery.animationImg-1.0.js"></script>
+<script src="jquery.animationImg.js"></script>
 ```
 
 #### Step 2: Create HTML markup
