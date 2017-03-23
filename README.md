@@ -22,9 +22,11 @@ javascript
 ```javascript
 $(document).ready(function(){
   $('.animation_img').animationImg({
-    steps: 43,
-    duration: 100,
-    repeat: false
+    startNum: 0,    //시작 이미지
+    steps: 10,      //이미지 개수
+    duration: 30,   //애니메이션 실행 속도
+    repeat: true,   //반복
+    delay: 0        //애니메이션 시작하기 전 딜레이
   });
 });
 ```
