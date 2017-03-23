@@ -31,10 +31,11 @@
   </style>
   <script>
     $(document).ready(function(){
-      //$('.img_animation').animationImg(96,30,'repeat');
       $('.start').on('click', function(){
         console.log('RUN!');
-        $('.img_animation').animationImg(96,30,'repeat');
+        $('.img_animation').animationImg({
+          steps: 96
+        });
       });
       $('.stop').on('click', function(){
         console.log('STOP!');
