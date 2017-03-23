@@ -7,8 +7,10 @@ jQuery image animation
 #### Step 1: Link required files
 
 ```html
-<script src="jquery-1.11.3.js"></script> <!-- jQuery library -->
-<script src="jquery.animationImg-1.0.js"></script> <!-- animationImg Javascript file -->
+<!-- jQuery library -->
+<script src="jquery-1.11.3.js"></script>
+<!-- animationImg Javascript file -->
+<script src="jquery.animationImg-1.0.js"></script>
 ```
 
 #### Step 2: Create HTML markup
