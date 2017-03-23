@@ -4,7 +4,7 @@ jQuery image animation
 
 ## How to install
 
-#### Step 1: Link required files
+### Step 1: Link required files
 
 ```html
 <!-- jQuery library -->
@@ -13,7 +13,7 @@ jQuery image animation
 <script src="jquery.animationImg-1.0.js"></script>
 ```
 
-#### Step 2: Create HTML markup
+### Step 2: Create HTML markup
 
 Setting class name!
 
@@ -21,9 +21,9 @@ Setting class name!
 <img src="../images/animation_0000.png" class="animation_img">
 ```
 
-#### Step 3: Call the animationImg
+### Step 3: Call the animationImg
 
-Call `.animationImg()` on `<img class="animation_img">`. Note that the call must be made inside of a $(document).ready() call, or the plugin will not work!
+Call `.animationImg()` on `<img class="animation_img">`. Note that the call must be made inside of a `$(document).ready()` call, or the plugin will not work!
 
 ```javascript
 $(document).ready(function(){
