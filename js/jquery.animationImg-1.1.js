@@ -18,14 +18,14 @@
 
     //기본값 설정 & 사용자 설정과 병합
     var option = $.extend({
-      startNum: 0,
+      start: 0,
       steps: 10,
       duration: 30,
       repeat: true,
       delay: 0
     }, settings );
 
-    for(i=option.startNum; i<option.steps+1; i++) {
+    for(i=option.start; i<option.steps+1; i++) {
       if (i < 10) {
         arrImg.push(imgPath + '000' + i + imgExtn);
       } else if (i < 100) {
@@ -43,15 +43,15 @@
         var anim = setInterval(aniImg, option.duration);
 
         function aniImg() {
-          option.startNum = option.startNum + 1;
-          if (option.startNum > option.steps) {
+          option.start = option.start + 1;
+          if (option.start > option.steps) {
             if (option.repeat) {
-              option.startNum = 0; //반복
+              option.start = 0; //반복
             } else {
               clearInterval(anim); //정지
             }
           } else {
-              $this.attr('src',arrImg[option.startNum]);
+              $this.attr('src',arrImg[option.start]);
           }
         }
       }, option.delay);
