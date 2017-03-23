@@ -4,10 +4,10 @@ jQuery image animation
 
 ## Defining Image File Format
 
-* Make file name what from 0000 to 9999. (Image files name increase from 0000 to 9999 [Four digits])
+Make file name what from 0000 to 9999. (Image files name increase from 0000 to 9999 [Four digits])
 > imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
 
-* The image files extension shall be png/gif/jpg.
+The image files extension shall be png/gif/jpg.
 
 
 ## How to install
