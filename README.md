@@ -51,3 +51,11 @@ $(document).ready(function(){
 |duration |number   |30       |Animation duration           |
 |repeat   |boolean  |true     |Repeat animation             |
 |delay    |number   |0        |Delay before start anmation  |
+
+## Method
+
+#### Destroy animation
+
+```javascript
+  $('.animation_img').animationImg.destroy();
+```

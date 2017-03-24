@@ -51,6 +51,7 @@
         if (matchPath[0] !== 'null') { //올바른 값일때만 실행
           setTimeout(function(){
             anim = setInterval(aniImg, option.duration);
+
             function aniImg() {
               option.start = option.start + 1;
 
@@ -64,6 +65,7 @@
                   $this.attr('src',arrImg[option.start]);
               }
             }
+
           }, option.delay);
         }
 
