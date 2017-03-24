@@ -28,11 +28,11 @@
 
         //기본값 설정 & 사용자 설정과 병합
         var option = $.extend({
-          start: 0,
-          steps: 10,
-          duration: 30,
-          repeat: true,
-          delay: 0
+          start: 0,         //시작 이미지 위치
+          steps: 10,        //총 이미지 개수
+          duration: 30,     //애니메이션 실행 속도
+          repeat: true,     //반복
+          delay: 0          //첫 시작 애니메이션 지연시간
         }, settings);
 
         //이미지 담아두기
