@@ -8,6 +8,7 @@
     };
 
     ConstructorFn.fn = ConstructorFn.prototype = {
+        run: false,
         init: function(el, options) {
             // 사용자 정의 옵션 >> 기본 옵션 = 병합
             options = $.extend({}, $.fn[plugin_name].defaults, options);
@@ -18,8 +19,8 @@
         events: function(el, options) {
 
             // 플러그인 코드
-            if(!run) { //실행여부 체크
-                run = true;
+            if(!el.run) { //실행여부 체크
+                el.run = true;
                 var $this = $(el);
                 var path = $this.attr('src');
                 var rePath = /.+(?=[0-9]{4}.)/gm; //[첫번째 문자] ~ [4자리 숫자.] 전까지의 값을 반환 (4자리 숫자.png/jpg/gif (0000.jpg) 는 반환값에 포함되지 않는다.)
@@ -70,7 +71,6 @@
             } else {
                 alert('중복실행은 되지 않아요!! >_<');
             }
-
         }
     };
 
@@ -82,9 +82,9 @@
             return $.each($this, function(index, el){
                 // var _$item = $this.eq(index);
 
-
                 // 생성자 함수에 options 전달
                 new ConstructorFn(el, options);
+
             });
         };
 
@@ -96,6 +96,8 @@
             repeat: true,     //반복
             delay: 0          //첫 시작 애니메이션 지연시간
         };
+
+
     }
 
 })(window, window.jQuery);
