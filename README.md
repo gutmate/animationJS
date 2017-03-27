@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 ## Method
 
-#### Destroy animation
+~~#### Destroy animation~~
 
 ```javascript
 $('.animation_img').animationImg.destroy();
