@@ -1,3 +1,8 @@
+/**
+ * jQuery.animationImg
+ * @author Jinhyung Park
+ * @date 2017-03-23
+ */
 ;(function(global, $){
     'use strict';
 

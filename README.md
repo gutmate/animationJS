@@ -57,5 +57,5 @@ $(document).ready(function(){
 ~~#### Destroy animation~~
 
 ```javascript
-$('.animation_img').animationImg.destroy();
+// $('.animation_img').animationImg.destroy();
 ```
