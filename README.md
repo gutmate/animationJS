@@ -59,3 +59,7 @@ $(document).ready(function(){
 ```javascript
 // $('.animation_img').animationImg.destroy();
 ```
+
+## Demo
+
+* [animationJS Demo](https://gutmate.github.io/animationJS/animation.html)
