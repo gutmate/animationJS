@@ -39,6 +39,9 @@
                 var i;
                 var anim;
 
+                console.log(reversePath);
+                console.log(imgExtn);
+
                 //이미지 담아두기
                 for (i = options.start; i < options.steps + 1; i++) {
                     if (i < 10) {
@@ -100,6 +103,10 @@
             duration: 30,     //애니메이션 실행 속도
             repeat: true,     //반복
             delay: 0          //첫 시작 애니메이션 지연시간
+        };
+
+        $.fn[plugin_name].destroy = function () {
+            console.dir(this);
         };
 
 
