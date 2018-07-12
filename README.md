@@ -62,4 +62,4 @@ $(document).ready(function(){
 
 ## Demo
 
-* [animationJS Demo](https://gutmate.github.io/animationJS/animation.html)
+> [animationJS Demo](https://gutmate.github.io/animationJS/animation.html)
