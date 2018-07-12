@@ -106,7 +106,7 @@
         };
 
         $.fn[plugin_name].destroy = function () {
-            console.dir(this);
+            console.dir('STOP!!');
         };
 
 
