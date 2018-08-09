@@ -53,10 +53,9 @@
                 <h1>Animation image</h1>
                 <p class="button-wrap">
                     <button class="start01">RUN!</button>
-                    <button class="stop01">STOP!</button>
                 </p>
                 <p>
-                    <img src="img/img_layer_0000.jpg" alt="gif" class="img_animation01">
+                    <img src="http://pub.ziten.co.kr/_animation/images/img_layer_0000.jpg" alt="gif" class="img_animation01">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
@@ -68,10 +67,9 @@
                 <h1>Animation image</h1>
                 <p class="button-wrap">
                     <button class="start02">RUN!</button>
-                    <button class="stop02">STOP!</button>
                 </p>
                 <p>
-                    <img src="img/img_layer_0000.jpg" alt="gif" class="img_animation02">
+                    <img src="http://pub.ziten.co.kr/_animation/images/img_layer_0000.jpg" alt="gif" class="img_animation02">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
@@ -79,7 +77,10 @@
                 </ul>
             </div>
 
+            <div style="margin-top: 20px;"><strong>예제는 서버 상태에 따라 버벅일 수 있습니다.</strong></div>
+
         </div>
+
         <script>
             $(document).ready(function () {
                 $('.start01').on('click', function () {
@@ -88,19 +89,11 @@
                         duration: 100
                     });
                 });
-                $('.stop01').on('click', function () {
-                    $('.img_animation01').animationImg.destroy();
-                });
-
                 $('.start02').on('click', function () {
                     $('.img_animation02').animationImg({
                         steps: 96
                     });
                 });
-                $('.stop02').on('click', function () {
-                    $('.img_animation02').animationImg.destroy();
-                });
-
             });
         </script>
     </div>
