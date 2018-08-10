@@ -14,7 +14,7 @@
             width: 100%;
         }
         .animation {
-            padding-top: 50px;
+            padding: 50px 0 100px;
             text-align: center;
         }
         .button-wrap {
@@ -55,7 +55,7 @@
                     <button class="start01">RUN!</button>
                 </p>
                 <p>
-                    <img src="http://pub.ziten.co.kr/_animation/images/img_layer_0000.jpg" alt="gif" class="img_animation01">
+                    <img src="http://jinh.site/animationJs/img/img_layer_0000.jpg" alt="gif" class="img_animation01">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
@@ -69,11 +69,11 @@
                     <button class="start02">RUN!</button>
                 </p>
                 <p>
-                    <img src="http://pub.ziten.co.kr/_animation/images/img_layer_0000.jpg" alt="gif" class="img_animation02">
+                    <img src="http://jinh.site/animationJs/img/img_layer_0000.jpg" alt="gif" class="img_animation02">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
-                    <li>duration : default(30)</li>
+                    <li>duration : 50</li>
                 </ul>
             </div>
 
@@ -91,7 +91,8 @@
                 });
                 $('.start02').on('click', function () {
                     $('.img_animation02').animationImg({
-                        steps: 96
+                        steps: 96,
+                        duration: 50
                     });
                 });
             });
