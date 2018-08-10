@@ -52,14 +52,6 @@ $(document).ready(function(){
 |repeat   |boolean  |true     |Repeat animation             |
 |delay    |number   |0        |Delay before start anmation  |
 
-## Method
-
-~~#### Destroy animation~~
-
-```javascript
-// $('.animation_img').animationImg.destroy();
-```
-
 ## Demo
 
 > [animationJS Demo](https://gutmate.github.io/animationJS/animation.html)
