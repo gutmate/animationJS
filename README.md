@@ -55,3 +55,11 @@ $(document).ready(function(){
 ## Demo
 
 > [animationJS Demo](https://gutmate.github.io/animationJS/animation.html)
+
+## Download
+
+> [animationJS Download](https://gutmate.github.io/animationJS/js/jquery.animationImg.js)
+
+## GitHub
+
+> [animationJS GitHub](https://github.com/gutmate/animationJS)
