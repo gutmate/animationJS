@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>animationImg</title>
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/jquery.animationImg.js"></script>
     <style>
         .wrap {
             width: 100%;
@@ -55,7 +53,7 @@
                     <button class="start01">RUN!</button>
                 </p>
                 <p>
-                    <img src="http://jinh2384.godohosting.com/animationJs/img/img_layer_0000.jpg" alt="gif" class="img_animation01">
+                    <img src="img/img_layer_0000.jpg" alt="gif" class="img_animation01">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
@@ -69,7 +67,7 @@
                     <button class="start02">RUN!</button>
                 </p>
                 <p>
-                    <img src="http://jinh2384.godohosting.com/animationJs/img/img_layer_0000.jpg" alt="gif" class="img_animation02">
+                    <img src="img/img_layer_0000.jpg" alt="gif" class="img_animation02">
                 </p>
                 <ul class="options">
                     <li>steps : 96</li>
@@ -81,24 +79,24 @@
 
         </div>
 
-        <script>
-            $(document).ready(function () {
-                $('.start01').on('click', function () {
-                    $('.img_animation01').animationImg({
-                        steps: 96,
-                        duration: 100
-                    });
-                });
-                $('.start02').on('click', function () {
-                    $('.img_animation02').animationImg({
-                        steps: 96,
-                        duration: 50
-                    });
-                });
-            });
-        </script>
     </div>
 
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.animationImg.js"></script>
+    <script>
+        $('.start01').on('click', function () {
+            $('.img_animation01').animationImg({
+                steps: 96,
+                duration: 100
+            });
+        });
+        $('.start02').on('click', function () {
+            $('.img_animation02').animationImg({
+                steps: 96,
+                duration: 50
+            });
+        });
+    </script>
 </body>
 
 </html>
